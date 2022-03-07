@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+body {
+  background-color: #000;
+  height: 100vh;
+  width: 100%;
+}
+video {
+  width: 33.33%;
+  float: left;
+  margin: 0;
+}
+span {
+    font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    color: #fff;
+    z-index: 1;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+</style>
+<body>
+    <span>
+        CLICK ME
+    </span>
+  <video id="vid">
+    <source src="1.mp4" type="video/mp4">
+  </video>
+  <video id="vid1">
+    <source src="1.mp4" type="video/mp4">
+  </video>
+  <video id="vid2">
+    <source src="1.mp4" type="video/mp4">
+  </video>
+  <video id="vid3">
+    <source src="1.mp4" type="video/mp4">
+  </video>
+  <video id="vid4">
+    <source src="1.mp4" type="video/mp4">
+  </video>
+  <video id="vid5">
+    <source src="1.mp4" type="video/mp4">
+  </video>
+  <video id="vid6">
+    <source src="1.mp4" type="video/mp4">
+  </video>
+  <video id="vid7">
+    <source src="1.mp4" type="video/mp4">
+  </video>
+  <video id="vid8">
+    <source src="1.mp4" type="video/mp4">
+  </video>
+  <video id="vid9">
+    <source src="1.mp4" type="video/mp4">
+  </video>
+  <video id="vid10">
+    <source src="1.mp4" type="video/mp4">
+  </video>
+  <video id="vid11">
+    <source src="1.mp4" type="video/mp4">
+  </video>
+</body>
+<script>
+
+document.body.addEventListener('click', () => {
+  document.getElementById('vid').play();
+  document.getElementById('vid1').play();
+  document.getElementById('vid2').play();
+  document.getElementById('vid3').play();
+  document.getElementById('vid4').play();
+  document.getElementById('vid5').play();
+  document.getElementById('vid6').play();
+  document.getElementById('vid7').play();
+  document.getElementById('vid8').play();
+  document.getElementById('vid9').play();
+  document.getElementById('vid10').play();
+  document.getElementById('vid11').play();
+  document.querySelector("span").style.display = 'none';
+});
+
+</script>
+</html>
