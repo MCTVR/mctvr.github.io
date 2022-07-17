@@ -1,101 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<style>
-body {
-  background-color: #000;
-  height: 100vh;
-  width: 100%;
-}
-video {
-  width: 33.33%;
-  float: left;
-  margin: 0;
-}
-span {
-    font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    color: #fff;
-    z-index: 1;
-    font-size: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-</style>
-<body>
-    <span>
-        CLICK ME
-    </span>
-  <video playsinline id="vid">
-    <source src="1.mp4" type="video/mp4">
-  </video>
-  <video playsinline id="vid1">
-    <source src="1.mp4" type="video/mp4">
-  </video>
-  <video playsinline id="vid2">
-    <source src="1.mp4" type="video/mp4">
-  </video>
-  <video playsinline id="vid3">
-    <source src="1.mp4" type="video/mp4">
-  </video>
-  <video playsinline id="vid4">
-    <source src="1.mp4" type="video/mp4">
-  </video>
-  <video playsinline id="vid5">
-    <source src="1.mp4" type="video/mp4">
-  </video>
-  <video playsinline id="vid6">
-    <source src="1.mp4" type="video/mp4">
-  </video>
-  <video playsinline id="vid7">
-    <source src="1.mp4" type="video/mp4">
-  </video>
-  <video playsinline id="vid8">
-    <source src="1.mp4" type="video/mp4">
-  </video>
-  <video playsinline id="vid9">
-    <source src="1.mp4" type="video/mp4">
-  </video>
-  <video playsinline id="vid10">
-    <source src="1.mp4" type="video/mp4">
-  </video>
-  <video playsinline id="vid11">
-    <source src="1.mp4" type="video/mp4">
-  </video>
-  <video playsinline id="vid12">
-    <source src="1.mp4" type="video/mp4">
-  </video>
-  <video playsinline id="vid13">
-    <source src="1.mp4" type="video/mp4">
-  </video>
-  <video playsinline id="vid14">
-    <source src="1.mp4" type="video/mp4">
-  </video>
-</body>
-<script>
+<html>
+	<head>
+		<title>MCTVR GitHub</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
-document.body.addEventListener('click', () => {
-  document.getElementById('vid').play();
-  document.getElementById('vid1').play();
-  document.getElementById('vid2').play();
-  document.getElementById('vid3').play();
-  document.getElementById('vid4').play();
-  document.getElementById('vid5').play();
-  document.getElementById('vid6').play();
-  document.getElementById('vid7').play();
-  document.getElementById('vid8').play();
-  document.getElementById('vid9').play();
-  document.getElementById('vid10').play();
-  document.getElementById('vid11').play();
-  document.getElementById('vid12').play();
-  document.getElementById('vid13').play();
-  document.getElementById('vid14').play();
-  document.querySelector("span").style.display = 'none';
-});
+				<!-- Header -->
+					<header id="header">
+						<img style="border-radius: 50%; height: 225px; margin-bottom: 14px;" src="./assets/css/images/mctvr.jpeg" />
+						<h1>MCTVR</h1>
+						<!-- <p>Security Chief &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this</p> -->
+						<nav>
+							<ul>
+								<li><a href="https://twitter.com/Master_Creeper_" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+								<li><a href="https://github.com/MCTVR" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="mailto:mctvr@picascademail.ml" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
 
-</script>
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; MCTVR. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+					</footer>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
 </html>
